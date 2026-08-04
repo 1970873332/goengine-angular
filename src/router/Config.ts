@@ -1,5 +1,8 @@
 import { Route } from "@angular/router";
-import { RouteConfig as BaseRouteConfig, RouteObject } from "@web/router/Config";
+import {
+    RouteConfig as BaseRouteConfig,
+    RouteObject,
+} from "@goengine/web/src/router/Config";
 
 /**
  * Angular路由配置
@@ -13,14 +16,12 @@ export default abstract class RouteConfig extends BaseRouteConfig {
     }
 }
 
-type TRouteObject = Route & RouteObject & {
-    /**
-     * 子项
-     */
-    children?: TRouteObject[];
-};
+type TRouteObject = Route &
+    RouteObject & {
+        /**
+         * 子项
+         */
+        children?: TRouteObject[];
+    };
 
-export {
-    TRouteObject as RouteObject
-};
-
+export { TRouteObject as RouteObject };
