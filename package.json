@@ -6,16 +6,15 @@
     "author": "Mr.Rui",
     "type": "module",
     "dependencies": {
-        "@angular/common": "^21.2.8",
+        "@goengine/web": "workspace:*",
         "@angular/core": "^21.2.8",
+        "@angular/router": "^21.2.8"
+    },
+    "peerDependencies": {
+        "@angular/common": "^21.2.8",
         "@angular/platform-browser": "^21.2.8",
-        "@angular/router": "^21.2.8",
         "rxjs": "^7.8.2",
         "zone.js": "^0.16.1"
     },
-    "devDependencies": {
-        "@angular-devkit/build-angular": "^21.2.7",
-        "@angular/cli": "^21.2.7",
-        "@angular/compiler-cli": "^21.2.8"
-    }
+    "devDependencies": {}
 }
